@@ -20,7 +20,8 @@ class _PerguntaAppState extends State<PerguntaApp> {
   Widget build(BuildContext context) {
     final perguntas = [
       'Quantos planetas existe no sistema solar?',
-      'Qual a quantidade de satelites naturais que Jupiter possui?'
+      'Qual a quantidade de satelites naturais que Jupiter possui?',
+      'Qual a distância em minutos/luz entre o sol e a terra?'
     ];
 
     return MaterialApp(
@@ -30,7 +31,9 @@ class _PerguntaAppState extends State<PerguntaApp> {
         body: Column(
           children: <Widget>[
             Questao(perguntas[_perguntaSelecionada]),
-            Resposta('Resposta')
+            Resposta('Resposta 1', _resposta),
+            Resposta('Resposta 2', _resposta),
+            Resposta('Resposta 3', _resposta),
         ],)
         ,)
     );
